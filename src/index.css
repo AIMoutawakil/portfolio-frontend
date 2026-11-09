@@ -22,3 +22,12 @@
     text-underline-offset: 4px;
   }
 }
+
+/* Supprimer les lignes jaunes dans la section contact */
+#contact p, 
+#contact a, 
+#contact span {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
