@@ -183,6 +183,7 @@ const ContactSection = () => {
                   <label className="text-textMuted font-mono text-sm tracking-widest uppercase">Nom complet</label>
                   <input 
                     type="text" required
+                    spellCheck={false}
                     value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})}
                     className="bg-primary border border-metallic/30 text-textMain px-4 py-3 focus:outline-none focus:border-accent transition-colors font-sans"
                     placeholder="Ex: Jean Dupont"
@@ -193,6 +194,7 @@ const ContactSection = () => {
                   <label className="text-textMuted font-mono text-sm tracking-widest uppercase">Adresse Email</label>
                   <input 
                     type="email" required
+                    spellCheck={false}
                     value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})}
                     className="bg-primary border border-metallic/30 text-textMain px-4 py-3 focus:outline-none focus:border-accent transition-colors font-sans"
                     placeholder="jean.dupont@entreprise.com"
@@ -203,6 +205,7 @@ const ContactSection = () => {
                   <label className="text-textMuted font-mono text-sm tracking-widest uppercase">Message</label>
                   <textarea 
                     rows="5" required
+                    spellCheck={false}
                     value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}
                     className="bg-primary border border-metallic/30 text-textMain px-4 py-3 focus:outline-none focus:border-accent transition-colors font-sans resize-none"
                     placeholder="Détaillez votre projet ou votre offre ici..."
