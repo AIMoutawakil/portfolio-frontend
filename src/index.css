@@ -12,12 +12,16 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
+
+  /* Sécurité globale pour bloquer les soulignements intempestifs sur tout le site */
+  a, p, span {
+    text-decoration: none !important;
+  }
 }
 
 @layer utilities {
   .text-textMuted {
-    text-decoration-line: none;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+    text-decoration: none !important;
+    /* On supprime thickness et offset qui causaient l'apparition des lignes */
   }
 }
