@@ -41,8 +41,6 @@ const PublicPortfolio = () => {
           <div className="absolute inset-0 pointer-events-none opacity-5" style={{ backgroundImage: 'linear-gradient(#E9F0F7 1px, transparent 1px), linear-gradient(90deg, #E9F0F7 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
           {/* BARRE DE NAVIGATION */}
-          <nav className="w-full py-6 px-6 lg:px-16 flex justify-between items-center relative z-50">
-
             <nav className="w-full py-6 px-6 lg:px-16 flex justify-between items-center relative z-50">
               
               {/* --- NOUVEAU LOGO IMAGE --- */}
@@ -67,16 +65,6 @@ const PublicPortfolio = () => {
                 Contact
               </button>
             </nav>
-            <ul className="hidden lg:flex space-x-10 text-sm font-mono tracking-widest uppercase text-textMuted">
-              <li onClick={() => scrollToSection('accueil')} className="hover:text-accent transition-colors cursor-pointer">Accueil</li>
-              <li onClick={() => scrollToSection('a-propos')} className="hover:text-accent transition-colors cursor-pointer">À propos</li>
-              <li onClick={() => scrollToSection('competences')} className="hover:text-accent transition-colors cursor-pointer">Compétences</li>
-              <li onClick={() => scrollToSection('projets')} className="hover:text-accent transition-colors cursor-pointer">Projets</li>
-            </ul>
-            <button onClick={() => scrollToSection('contact')} className="hidden lg:block bg-transparent border border-accent text-accent px-6 py-2 font-mono text-sm tracking-widest uppercase hover:bg-accent hover:text-primary transition-all duration-300">
-              Contact
-            </button>
-          </nav>
 
           {/* SECTIONS */}
           <HeroSection />
