@@ -42,9 +42,31 @@ const PublicPortfolio = () => {
 
           {/* BARRE DE NAVIGATION */}
           <nav className="w-full py-6 px-6 lg:px-16 flex justify-between items-center relative z-50">
-            <div onClick={() => scrollToSection('accueil')} className="font-heading font-bold text-3xl tracking-wider text-textMain cursor-pointer">
-              M<span className="text-accent">.</span>I
-            </div>
+
+            <nav className="w-full py-6 px-6 lg:px-16 flex justify-between items-center relative z-50">
+              
+              {/* --- NOUVEAU LOGO IMAGE --- */}
+              <div onClick={() => scrollToSection('accueil')} className="cursor-pointer">
+                <img 
+                  src="/images/logo.png" 
+                  alt="Logo Moutawakil Imrane" 
+                  className="h-12 w-auto hover:scale-105 transition-transform duration-300" 
+                />
+              </div>
+
+              {/* --- MENUS --- */}
+              <ul className="hidden lg:flex space-x-10 text-sm font-mono tracking-widest uppercase text-textMuted">
+                <li onClick={() => scrollToSection('accueil')} className="hover:text-accent transition-colors cursor-pointer">Accueil</li>
+                <li onClick={() => scrollToSection('a-propos')} className="hover:text-accent transition-colors cursor-pointer">À propos</li>
+                <li onClick={() => scrollToSection('competences')} className="hover:text-accent transition-colors cursor-pointer">Compétences</li>
+                <li onClick={() => scrollToSection('projets')} className="hover:text-accent transition-colors cursor-pointer">Projets</li>
+              </ul>
+
+              {/* --- BOUTON CONTACT --- */}
+              <button onClick={() => scrollToSection('contact')} className="hidden lg:block bg-transparent border border-accent text-accent px-6 py-2 font-mono text-sm tracking-widest uppercase hover:bg-accent hover:text-primary transition-all duration-300">
+                Contact
+              </button>
+            </nav>
             <ul className="hidden lg:flex space-x-10 text-sm font-mono tracking-widest uppercase text-textMuted">
               <li onClick={() => scrollToSection('accueil')} className="hover:text-accent transition-colors cursor-pointer">Accueil</li>
               <li onClick={() => scrollToSection('a-propos')} className="hover:text-accent transition-colors cursor-pointer">À propos</li>
