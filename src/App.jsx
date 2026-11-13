@@ -41,8 +41,7 @@ const PublicPortfolio = () => {
           <div className="absolute inset-0 pointer-events-none opacity-5" style={{ backgroundImage: 'linear-gradient(#E9F0F7 1px, transparent 1px), linear-gradient(90deg, #E9F0F7 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
           {/* BARRE DE NAVIGATION */}
-            <nav className="w-full py-6 px-6 lg:px-16 flex justify-between items-center relative z-50">
-              
+            <nav className="fixed top-0 left-0 w-full py-4 px-6 lg:px-16 flex justify-between items-center z-50 bg-primary/90 backdrop-blur-md border-b border-metallic/10">              
               {/* --- NOUVEAU LOGO IMAGE --- */}
               <div onClick={() => scrollToSection('accueil')} className="cursor-pointer">
                 <img 
